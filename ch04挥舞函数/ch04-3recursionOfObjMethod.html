@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List4.3 recurion of method in Object</title>
+    <script type="text/javascript" src="../scripts/assert.js"></script>
+    <link href="../styles/assert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script>
+    var ninja = {
+        chirp:function (n) {
+            return n>1? ninja.chirp(n-1)+"-chirp" : "chirp";
+        }
+    }
+
+    assert(ninja.chirp(3) == "chirp-chirp-chirp",
+            "An object property isn't too confusing,either.");
+</script>
+</body>
+</html>
