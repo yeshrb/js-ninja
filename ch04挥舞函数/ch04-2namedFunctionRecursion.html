@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List4.2 named function</title>
+    <script type="text/javascript" src="../scripts/assert.js"></script>
+    <link href="../styles/assert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script>
+    function chirp(n) {
+        return n>1? chirp(n-1)+"-chirp" : "chirp";
+    }
+    assert(chirp(3) == "chirp-chirp-chirp","Calling the named function comes naturally");
+</script>
+</body>
+</html>
