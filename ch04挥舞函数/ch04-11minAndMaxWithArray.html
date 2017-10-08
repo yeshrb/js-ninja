@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List4.11数组上的通用max和min</title>
+    <script type="text/javascript" src="../scripts/assert.js"></script>
+    <link href="../styles/assert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<script>
+    function smallest(array) {
+        return Math.min.apply(Math,array);
+    }
+
+    function largest(array) {
+        return Math.max.apply(Math,array);
+    }
+
+   assert(smallest([0,1,2,3]) === 0,
+            "smallest works");
+
+    assert(largest([0,1,2,3]) === 3,
+        "largest works");
+
+
+
+</script>
+</body>
+</html>
