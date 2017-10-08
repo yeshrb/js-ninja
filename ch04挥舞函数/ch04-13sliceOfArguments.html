@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List4.13对arguments进行切片</title>
+    <script type="text/javascript" src="../scripts/assert.js"></script>
+    <link href="../styles/assert.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<script>
+    function multiMax(multi) {
+        return multi * Math.max.apply(Math,
+            Array.prototype.slice.call(arguments,1));
+    }
+   assert(multiMax(3,1,2,3) === 9,"3*3=9 (First arg,by largest.)");
+</script>
+</body>
+</html>
